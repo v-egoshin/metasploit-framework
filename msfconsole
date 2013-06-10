@@ -153,9 +153,11 @@ options = OptsConsole.parse(ARGV)
 # NOTE: we don't require this until down here since we may not need it
 # when processing certain options (currently only -h)
 #
+#
+require 'pry'
 require 'rex'
 require 'msf/ui'
-
+binding.pry
 #
 # Everything below this line requires the framework.
 #

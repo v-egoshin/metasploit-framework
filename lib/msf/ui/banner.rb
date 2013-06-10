@@ -33,6 +33,7 @@ module Banner
   def self.readfile(fname)
     base = File.expand_path(File.dirname(__FILE__))
     pathname = File.join(base, "logos", fname)
+	binding.pry
     fdata = "<< Missing banner: #{fname} >>"
     begin
       raise ArgumentError unless File.readable?(pathname)

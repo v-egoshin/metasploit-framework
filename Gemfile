@@ -10,6 +10,7 @@ gem 'msgpack'
 gem 'nokogiri'
 # Needed by anemone crawler
 gem 'robots'
+gem 'pry'
 
 group :db do
 	# Needed for Msf::DbManager
